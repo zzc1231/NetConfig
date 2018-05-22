@@ -1,0 +1,17 @@
+tunnels:
+  manager:
+    proto: http
+    addr: 5000
+    region: ap
+
+  webinterface:
+    proto: http
+    addr: 4040
+
+  webdav:
+    proto: tcp
+    addr: 5005
+
+  ssh:
+    proto: tcp
+    addr: 22
