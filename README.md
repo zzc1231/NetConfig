@@ -1,2 +1,2 @@
 # NgrokConfig
-ngrok的服务器配置
+ngrok的内网客户端配置
