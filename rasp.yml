@@ -1,18 +1,15 @@
+region： ap
 tunnels:
   manager:
     proto: http
-    addr: 192.168.0.101:5000
-    region: ap
-
+    addr: 192.168.0.101:5000 
   webinterface:
     proto: http
     addr: 4040
     bind_tls： false
-
   webdav:
     proto: tcp
     addr: 192.168.0.101:5005
-
   ssh:
     proto: tcp
     addr: 192.168.0.101:22
