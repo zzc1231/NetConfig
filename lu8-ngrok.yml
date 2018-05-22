@@ -5,6 +5,9 @@ tunnels:
     # remote_port: 222                                     #指定远程服务器对应的端口 若本行注释掉就随机分配
     proto:
      tcp: 127.0.0.1:222
+  zzc-nas-webdav:
+    proto:
+      tcp: 127.0.0.1:5005
 
   zzc-nas-namager:
     subdomain: "zzcmanager"                 #自定义子域名
