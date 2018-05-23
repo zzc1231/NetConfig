@@ -2,16 +2,19 @@ server_addr: "lu8.win:4443"       #此处lu8.win:4443 更换成你服务器域�
 inspect_addr: 127.0.0.1:4050
 tunnels:
   zzc-rasp-webdav:      # 目标地址
+    inspect: false
     remote_port: 55006
     proto:
       tcp: 192.168.0.101:5005
 
   zzc-rasp-ssh:      # 目标地址
+    inspect: false
     remote_port: 22223
     proto:
       tcp: 127.0.0.1:22
 
   zzc-rasp-namager:
+    inspect: false
     subdomain: "raspmanager"                 #自定义子域名
     proto:
       http: 192.168.0.101:5000    
