@@ -4,16 +4,20 @@ tunnels:
   manager:
     proto: http
     addr: 192.168.0.101:5000 
+    inspect: false
     
   webinterface:
     proto: http
     addr: 4040
     bind_tls: false
+    inspect: false
     
   webdav:
     proto: tcp
     addr: 192.168.0.101:5005
+    inspect: false
     
   ssh:
     proto: tcp
     addr: 22
+    inspect: false
