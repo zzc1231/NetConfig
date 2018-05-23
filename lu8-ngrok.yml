@@ -2,7 +2,7 @@ server_addr: "lu8.win:4443"       #此处lu8.win:4443 更换成你服务器域�
 inspect_addr: 127.0.0.1:4050
 tunnels:
   zzc-nas-ssh:
-    # remote_port: 222                                     #指定远程服务器对应的端口 若本行注释掉就随机分配
+    remote_port: 222                                     #指定远程服务器对应的端口 若本行注释掉就随机分配
     proto:
      tcp: 127.0.0.1:222
   zzc-nas-webdav:
@@ -12,11 +12,13 @@ tunnels:
   zzc-nas-namager:
     subdomain: "zzcmanager"                 #自定义子域名
     # hostname: "cs1.lu8.win"       #自定义域名，需将此域名解析至上面server_addr服务器
+    remote_port: 80  # 尝试加的
     proto:
      http: 127.0.0.1:5000         #本地对应的ip和端口
      https: 127.0.0.1:5001
   zzc-nas-inspect:
     subdomain: "zzcinspect"
+    remote_port: 4050  # 尝试加的
     # hostname: "cs2.lu8.win"
     # auth: "QQ:123456"            #打开网页时需要输入的用户名和密码。此处用户名为：QQ 密码为：123456
     proto:
