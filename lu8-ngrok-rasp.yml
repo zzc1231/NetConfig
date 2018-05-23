@@ -1,0 +1,28 @@
+server_addr: "lu8.win:4443"       #此处lu8.win:4443 更换成你服务器域名或IP:端口
+inspect_addr: 127.0.0.1:4050
+tunnels:
+  zzc-rasp-webdav:      # 目标地址
+    remote_port: 55006
+    proto:
+      tcp: 192.168.0.101:5005
+
+  zzc-rasp-ssh:      # 目标地址
+    remote_port: 22223
+    proto:
+      tcp: 127.0.0.1:22
+
+  zzc-rasp-namager:
+    subdomain: "raspmanager"                 #自定义子域名
+    proto:
+      http: 192.168.0.101:5000    
+      https: 192.168.0.101:5001
+  
+  zzc-rasp-inspect:
+    subdomain: "raspinspect"
+    proto:
+      http: 192.168.0.101:4050 
+
+# http://zzcinspect.ngrok.lu8.win:83 -> 192.168.0.101:4050                                                                                                                   
+# tcp://ngrok.lu8.win:55005 -> 192.168.0.101:5005                                                                                                                            
+# http://zzcmanager.ngrok.lu8.win:83 -> 192.168.0.101:5000                                                                                                                   
+# https://zzcmanager.ngrok.lu8.win:83 -> 192.168.0.101:5001     
