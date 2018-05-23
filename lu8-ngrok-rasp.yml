@@ -20,7 +20,7 @@ tunnels:
   zzc-rasp-inspect:
     subdomain: "raspinspect"
     proto:
-      http: 192.168.0.101:4050 
+      http: 127.0.0.1:4050 
 
 # http://zzcinspect.ngrok.lu8.win:83 -> 192.168.0.101:4050                                                                                                                   
 # tcp://ngrok.lu8.win:55005 -> 192.168.0.101:5005                                                                                                                            
