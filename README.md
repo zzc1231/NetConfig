@@ -2,7 +2,12 @@
 ngrok的内网客户端配置
 
 
-## 隧道顺序部分
+## [ngrok](ngrok.com) 隧道顺序部分
+启用命令
+```
+./ngrok start -config rasp.yml --all
+```
+
 - managet
   - http
   - https
@@ -12,5 +17,12 @@ ngrok的内网客户端配置
 - webdav
 
 - ssh
+
+## [lu8](lu8.top) 部分
+### ngrok
+启用命令
+```
+./ngrok -config=lu8.ngrok.rasp.yml start-all
+```
 
 
