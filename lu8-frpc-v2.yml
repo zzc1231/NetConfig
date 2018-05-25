@@ -1,0 +1,59 @@
+[common]
+server_addr = frps.lu8.win
+server_port = 7100
+privilege_token = frp888
+log_file = frpc.log
+log_level = info
+log_max_days = 3
+
+[z-rasp-5001]
+privilege_mode = true
+type = https
+local_ip = 192.168.0.101
+local_port = 5001
+use_gzip = true
+use_encryption = true
+authentication_timeout = 0
+custom_domains = rasp1.frps.lu8.win
+#host_header_rewrite = rasp
+
+[z-rasp-5000]
+privilege_mode = true
+type = http
+local_ip = 192.168.0.101
+local_port = 5000
+use_gzip = true
+use_encryption = true
+authentication_timeout = 0
+custom_domains = rasp.frps.lu8.win
+#host_header_rewrite = rasp
+
+[z-rasp-22]
+privilege_mode = true
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+use_gzip = true
+use_encryption = true
+authentication_timeout = 0
+remote_port = 13816
+
+[z-rasp-222]
+privilege_mode = true
+type = tcp
+local_ip = 192.168.0.101
+local_port = 222
+use_gzip = true
+use_encryption = true
+authentication_timeout = 0
+remote_port = 13817
+
+[z-rasp-5005]
+privilege_mode = true
+type = tcp
+local_ip = 192.168.0.101
+local_port = 5005
+use_gzip = true
+use_encryption = true
+authentication_timeout = 0
+remote_port = 13818
