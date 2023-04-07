@@ -1,4 +1,4 @@
-name: generate animation
+name: generate animation main
 
 on:
   schedule:
